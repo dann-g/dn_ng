@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* Global Styles */
+html{
+	background-color: #FFF8F2;
+	color: #484844;
+	font-size: 100%;
+}
+body{
+	background-color: #FFF8F2;
+	color: #484844;
+	font-family: Roboto,sans-serif;
+}
+img{border-radius: 3%;}
+a{outline: 0;}
+/*CSS FOR LANDING PAGE*/
+	/*Menu for landing page*/
+	.menulayout  {
+		top:2vw;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left:  4vw;
+		font-family: Roboto;
+		font-style: bold;
+		font-weight: 700;
+		font-size: 8.75rem;
+		line-height: 164px;
+		text-decoration: none;
+		color: inherit;
+	}
+	ul li{
+		list-style: none;
+	}
+	/* Hovering over styling*/
+	.menulayout:hover > div{
+		opacity: 0.05;
+	}
+	.menulayout:hover > div:hover {
+		opacity: 1.0;
+	}
+	/*to remove the horrible blue and underline*/
+		a, a:hover{
+		text-decoration: inherit;
+		color: inherit;
+	}
+
+	/* Span styling*/
+
+	/*FROM 40-42 IS 0NLY FOR SHOWING THE SPAN  ON HOVER
+	IT TOOK WAY TOO LONG TO DO THIS....REMEMBER IT DANIEL! (yes i do feel a type of way reading this!!!
+	*/
+	.spanElement { display: none; }
+	.innerElement:hover  .spanElement {
+		display: block;
+	}
+	.innerElement{
+		outline: 0;
+	}
+	.spanElement{
+		font-family: inherit;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.75rem;
+		line-height: 33px;
+	}
+
+	#i-am{
+		position: absolute;
+		right:  40vw;
+		top: 11vw;	
+	}
+
+	#my-experiences{
+		position: absolute;
+		right: 4vw;
+		top: 11vw;
+	}
+	#and-my-thoughts{
+		position: absolute;
+		right: -1vw;
+		top: 13vw;
+	}
+/*END OF CSS FOR LANDING PAGE*/
+
+/*FOR NAVIGATION: At the time of writing this I couldn't rectify the same layout i made for the index.html with the
+	steps necessary for  creating a drop down menu*/
+	.overlay {
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #FFF8F2;
+		background-color: #FFF8F2;
+		overflow-y: hidden;
+		transition: 0.5s;
+	  }
+	  
+	  .overlay-content {
+		top:2vw;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left:  4vw;
+		font-family: Roboto;
+		font-style: bold;
+		font-weight: 700;
+		font-size: 8.75rem;
+		line-height: 10.25rem;
+		text-decoration: none;
+	  }
+	  
+	  .overlay a {
+		text-decoration: none;
+		color: #484844;
+		display: block;
+		transition: 0.3s;
+	  }
+	  
+	  .overlay-content:hover > a{
+		opacity: 0.05;
+	}
+	.overlay-content:hover > a:hover {
+		opacity: 1.0;
+	}
+	  
+	  .overlay .closebtn {
+		position: absolute;
+		top: -0.6vw;
+		right: 3.6vw;
+		font-size: 6vw;
+		display:block;
+		height: 80px;
+	  }
+	  .hamburger{
+		position: fixed;
+		overflow: hidden;
+		right: 3.2vw;
+		height: 80px;
+		font-size: 5vw;
+		cursor: pointer;
+		color: #484844;
+		
+	  }
+
+	  .overlayspans{
+		font-family: inherit;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.75rem;
+		line-height: 2rem;
+		display: none;
+	  }
+	  #overlay-iam{
+		position: absolute;
+		right:  42vw;
+		top: 11vw;
+	  }
+	  #overlay-imyexp{
+		position: absolute;
+		right: 2vw;
+		top: 24vw;
+	  }
+	  #overlay-mythoughts{
+		width:auto;
+		position: absolute;
+		right: -2vw;
+		top: 39vw;
+	  }
+	.overlay-content a:hover  .overlayspans {
+		display: block;
+	}
+/*END OF NAVIGATION SYLING*/
+
+/* i am styling  */
+.container{
+	background-color: inherit;
+	color:inherit;
+	
+}
+.pageTitle{
+	font-weight: 700;
+	font-size: 2.5rem;
+	text-decoration-line: underline;
+	top: 2.2vw;
+	margin: auto;
+	  width: 50%;
+	  text-align: center;
+
+}
+.subTitles {
+	top: 3.5vw;
+	margin: auto;
+  	width: 50%;
+	  text-align: center;
+}
+.table{color: #484844;}
+#name{
+	font-size: 1.8rem;
+	font-weight: 400;	
+	margin-bottom: 0em;
+}
+#tagline{
+	font-size: 1.5rem;
+	font-weight: 100;
+	top: 1vw;
+	margin-top: 1vw;
+	text-align: center;
+}
+.tableMove{
+	text-align:left ;
+	margin-top: 2.8vw;
+}
+#qaTitle{
+	font-size: 2.4vw;
+	text-decoration: underline;
+	font-weight: 400;
+}
+.answers{
+	margin-left: 7px;
+	font-style: normal;
+	font-weight: 200;
+}
+.questions{
+	font-style:normal;
+	font-weight: 700;
+}
+/*END OF  i am styling  */
+
+
+/*MY EXPERIENCES PAGE*/
+#myQuote{
+	font-size: 1.55rem;
+	font-weight: 100;
+	font-style: italic;
+	padding-bottom: 5vw;
+}
+.resume{
+	top: 5vw;
+	padding-bottom: 4vw;
+	text-align: left;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.outlineText{
+	border-radius: 3%;
+	background: #484844;
+	color:#FFF8F2;
+	width: 154px;
+	text-align: center;
+	height: auto;
+}
+div li{
+	list-style: square;
+}
+.role {
+	padding-top: -4px;
+}
+.linkstyling{
+	color:#00b4d8;
+	 text-decoration: underline;
+}
+/*END OF STYLING  FOR MY EXPERIENCES PAGE*/
+/*RESPONSIVE MEDIA QUERIES*/
+
+/*Laptops*/
+	/* ----------- Non-Retina Screens ----------- */
+	@media screen 
+	and (min-device-width: 1200px) 
+	and (max-device-width: 1600px) 
+	and (-webkit-min-device-pixel-ratio: 1) { 
+	}
+
+	/* ----------- Retina Screens ----------- */
+	@media screen 
+	and (min-device-width: 1200px) 
+	and (max-device-width: 1600px) 
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (min-resolution: 192dpi) { 
+	}
+
+/* Media Queries: Tablet Landscape */
+
