@@ -5,3 +5,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+function something() {
+////
+}
+function anything(){}
